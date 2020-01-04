@@ -7953,12 +7953,14 @@ header .header_bottom {
     padding: 3rem;
   }
 }
+.acf-block .acf-items .acf-item .product-img-box a:hover {
+  text-decoration: none !important;
+}
 .acf-block .acf-items .acf-item .product-img-box img {
   position: relative;
   z-index: 1;
 }
 .acf-block .acf-items .acf-item .product-img-box:hover {
-  text-decoration: none;
   color: crimson !important;
 }
 .acf-block .acf-items .acf-item .product-img-box:hover img {

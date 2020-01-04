@@ -1,7 +1,7 @@
 <?php 
 /**
  *
- * Template Name: Home Page
+ * Template Name: Home Page New
  *
  */
 global $wp_query;
@@ -235,9 +235,9 @@ else { $paged = 1; }
 		<!-- <div class="container"> -->
 
 			<article class="banner-content text-center wow bounceIn" data-wow-duration="2s" data-wow-delay=".5s">
-        <h1 class="banner-text">TRUST US TO MAKE YOUR</h1>
-        <h1 class="banner-text font-weight-bold">HOLIDAY SPECIAL</h1>
-        <a href="#" class="btn btn-danger btn-lg">Find a Gift Now!</a>
+        <h1 class="banner-text"><?php the_field('holiday_banner_text_1'); ?></h1>
+        <h1 class="banner-text font-weight-bold"><?php the_field('holiday_banner_text_2'); ?></h1>
+        <a href="<?php the_field('holiday_banner_button_url'); ?>" class="btn btn-danger btn-lg"><?php the_field('holiday_banner_button_text'); ?></a>
 			</article>
 			
     <!-- </div> -->
@@ -258,18 +258,19 @@ else { $paged = 1; }
 
         <div class="acf-item col-sm-6 col-md-6 mt-5  text-center">
           <article class="product-img-box">
-            <a href="#">
-              <img src="https://picsum.photos/800/800?image=16" alt="" class="img-fluid">
+            <a href="<?php the_field('image_box_button_url_1'); ?>">
+              <img src="<?php the_field('image_box_image_1'); ?>" alt="" class="img-fluid">
+              <!-- <img src="https://picsum.photos/800/800?image=16" alt="" class="img-fluid"> -->
             
               <div class="dark-text-box">
                 <div class="row">
                   <div class="col-sm-8">
                     <h4 class="product-title mt-3 pl-2 font-weight-bold text-left">
-                      QUESTIONS? CALL ... 1-800-GRANOLA®
+                      <?php the_field('image_box_title_1'); ?>
                     </h4>
                   </div>
                   <div class="col-sm-4">
-                    <span class="btn btn-danger btn-block btn-lg mt-1">800-472-6652</span>
+                    <span class="btn btn-danger btn-block btn-lg mt-1"><?php the_field('image_box_button_text_1'); ?></span>
                   </div>
                 </div>
               </div>
@@ -278,18 +279,19 @@ else { $paged = 1; }
         </div>
         <div class="acf-item col-sm-6 col-md-6 mt-5  text-center">
           <article class="product-img-box">
-            <a href="#">
-              <img src="https://picsum.photos/800/800?image=15" alt="" class="img-fluid">
+            <a href="<?php the_field('image_box_button_url_2'); ?>">
+              <img src="<?php the_field('image_box_image_2'); ?>" alt="" class="img-fluid">
+              <!-- <img src="https://picsum.photos/800/800?image=15" alt="" class="img-fluid"> -->
             
               <div class="dark-text-box">
                 <div class="row">
                   <div class="col-sm-8">
                     <h4 class="product-title mt-3 pl-2 font-weight-bold text-left">
-                      *FREE SHIPPING*ON ALL ORDERS OVER $49.00
+                      <?php the_field('image_box_title_2'); ?>
                     </h4>
                   </div>
                   <div class="col-sm-4">
-                    <div class="btn btn-danger btn-block btn-lg mt-1">Shop Now</div>
+                    <div class="btn btn-danger btn-block btn-lg mt-1"><?php the_field('image_box_button_text_2'); ?></div>
                   </div>
                 </div>
               </div>
@@ -298,18 +300,19 @@ else { $paged = 1; }
         </div>
         <div class="acf-item col-sm-6 col-md-6 mt-5  text-center">
           <article class="product-img-box">
-            <a href="#">
-              <img src="https://picsum.photos/800/800?image=18" alt="" class="img-fluid">
+            <a href="<?php the_field('image_box_button_url_3'); ?>">
+              <img src="<?php the_field('image_box_image_3'); ?>" alt="" class="img-fluid">
+              <!-- <img src="https://picsum.photos/800/800?image=18" alt="" class="img-fluid"> -->
             
               <div class="dark-text-box">
                 <div class="row">
                   <div class="col-sm-8">
                     <h4 class="product-title mt-3 pl-2 font-weight-bold text-left">
-                      MY GRANOLA IS NUTS!
+                      <?php the_field('image_box_title_3'); ?>
                     </h4>
                   </div>
                   <div class="col-sm-4">
-                    <span class="btn btn-danger btn-block btn-lg mt-1">Read More</span>
+                    <span class="btn btn-danger btn-block btn-lg mt-1"><?php the_field('image_box_button_text_3'); ?></span>
                   </div>
                 </div>
               </div>
@@ -318,18 +321,19 @@ else { $paged = 1; }
         </div>
         <div class="acf-item col-sm-6 col-md-6 mt-5  text-center">
           <article class="product-img-box">
-            <a href="#">
-              <img src="https://picsum.photos/800/800?image=19" alt="" class="img-fluid">
+            <a href="<?php the_field('image_box_button_url_4'); ?>">
+              <img src="<?php the_field('image_box_image_4'); ?>" alt="" class="img-fluid">
+              <!-- <img src="https://picsum.photos/800/800?image=19" alt="" class="img-fluid"> -->
             
               <div class="dark-text-box">
                 <div class="row">
                   <div class="col-sm-8">
                     <h4 class="product-title mt-3 pl-2 font-weight-bold text-left">
-                      GIVE THE GIFT OF GRANOLA
+                      <?php the_field('image_box_title_4'); ?>
                     </h4>
                   </div>
                   <div class="col-sm-4">
-                    <span class="btn btn-danger btn-block btn-lg mt-1">Contact Us</span>
+                    <span class="btn btn-danger btn-block btn-lg mt-1"><?php the_field('image_box_button_text_4'); ?></span>
                   </div>
                 </div>
               </div>
@@ -356,18 +360,18 @@ else { $paged = 1; }
           <div class="cta-box col-sm-6 col-md-8 text-center ">
             
             <h2 class="headline">
-              Everyone Has A Granola Story. Here’s Ours.
+              <?php the_field('cta_title'); ?>
             </h2>
-            <a href="#" class="btn btn-danger btn-lg mb-3">
-              Find a Gift Now!
+            <a href="<?php the_field('cta_button_url'); ?>" class="btn btn-danger btn-lg mb-3">
+              <?php the_field('cta_button_text'); ?>
             </a>
 
           </div>
           
           <div class="cta-img-box col-sm-6 col-md-4">
 
-            <img src="/wp-content/uploads/2020/01/dr-granola.png" alt="" class="img-fluid img-dr-granola">
-            <h3 class="txt-dr-granola font-weight-bold">DR. GRANOLA®</h3>
+            <img src="<?php the_field('cta_image'); ?>" alt="" class="img-fluid img-dr-granola">
+            <h3 class="txt-dr-granola font-weight-bold"><?php the_field('cta_image_text'); ?></h3>
 
           </div>
 
