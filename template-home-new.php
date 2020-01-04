@@ -44,40 +44,40 @@ else { $paged = 1; }
 			
       <div class="moose-slick-carousel">
         <a href="https://google.com">  
-          <div><img src="https://i.picsum.photos/id/1015/200/200.jpg" alt="product-category"></div>
+          <div><img src="https://i.picsum.photos/id/1015/400/400.jpg" alt="product-category"></div>
         </a>
         <a href="https://google.com">
-          <div><img src="https://i.picsum.photos/id/1016/200/200.jpg" alt="product-category"></div>
+          <div><img src="https://i.picsum.photos/id/1016/400/400.jpg" alt="product-category"></div>
         </a>
         <a href="https://google.com">
-          <div><img src="https://i.picsum.photos/id/1018/200/200.jpg" alt="product-category"></div>
+          <div><img src="https://i.picsum.photos/id/1018/400/400.jpg" alt="product-category"></div>
         </a>
         <a href="https://google.com">
-          <div><img src="https://i.picsum.photos/id/1021/200/200.jpg" alt="product-category"></div>
+          <div><img src="https://i.picsum.photos/id/1021/400/400.jpg" alt="product-category"></div>
         </a>
         <a href="https://google.com">
-          <div><img src="https://i.picsum.photos/id/1019/200/200.jpg" alt="product-category"></div>
+          <div><img src="https://i.picsum.photos/id/1019/400/400.jpg" alt="product-category"></div>
         </a>
         <a href="https://google.com">
-          <div><img src="https://i.picsum.photos/id/1022/200/200.jpg" alt="product-category"></div>
+          <div><img src="https://i.picsum.photos/id/1022/400/400.jpg" alt="product-category"></div>
         </a>
         <a href="https://google.com">
-          <div><img src="https://i.picsum.photos/id/1023/200/200.jpg" alt="product-category"></div>
+          <div><img src="https://i.picsum.photos/id/1023/400/400.jpg" alt="product-category"></div>
         </a>
         <a href="https://google.com">
-          <div><img src="https://i.picsum.photos/id/1024/200/200.jpg" alt="product-category"></div>
+          <div><img src="https://i.picsum.photos/id/1024/400/400.jpg" alt="product-category"></div>
         </a>
         <a href="https://google.com">
-          <div><img src="https://i.picsum.photos/id/1025/200/200.jpg" alt="product-category"></div>
+          <div><img src="https://i.picsum.photos/id/1025/400/400.jpg" alt="product-category"></div>
         </a>
         <a href="https://google.com">
-          <div><img src="https://i.picsum.photos/id/1026/200/200.jpg" alt="product-category"></div>
+          <div><img src="https://i.picsum.photos/id/1026/400/400.jpg" alt="product-category"></div>
         </a>
         <a href="https://google.com">
-          <div><img src="https://i.picsum.photos/id/1027/200/200.jpg" alt="product-category"></div>
+          <div><img src="https://i.picsum.photos/id/1027/400/400.jpg" alt="product-category"></div>
         </a>
         <a href="https://google.com">
-          <div><img src="https://i.picsum.photos/id/1028/200/200.jpg" alt="product-category"></div>
+          <div><img src="https://i.picsum.photos/id/1028/400/400.jpg" alt="product-category"></div>
         </a>
       </div>
 			
@@ -116,7 +116,7 @@ else { $paged = 1; }
         {
           breakpoint: 480,
           settings: {
-            slidesToShow: 1,
+            slidesToShow: 2,
             slidesToScroll: 1
           }
         }
@@ -148,81 +148,82 @@ else { $paged = 1; }
 		<div class="container">
 
 		<article class="products pb-3">
-				<div class="row">
-          <div class="product-item col-sm-6 col-md-3 mt-5">
-            <a href="#" class="product-img-box">
-              <img src="https://picsum.photos/300/300?image=10" alt="" class="img-fluid">
-            
-              <h4 class="product-title text-center mt-3 font-weight-bold">MY GRANOLA IS NUTS! DR. GRANOLA® SIMPLE & EASY BAKE IT YOURSELF GRANOLA GIFT KIT! *FREE SHIPPING! **FREE COFFEE!</h4>
-            </a>
-            <h3 class="product-price text-center mt-5 font-weight-bold text-danger">$54.00</h3>
+      <div class="row">
 
-          </div>
-          <div class="product-item col-sm-6 col-md-3 mt-5">
-            <a href="#" class="product-img-box">
-              <img src="https://picsum.photos/300/300?image=20" alt="" class="img-fluid">
-            
-              <h4 class="product-title text-center mt-3 font-weight-bold">MY GRANOLA IS NUTS! DR. GRANOLA® SIMPLE & EASY BAKE IT YOURSELF GRANOLA GIFT KIT! *FREE SHIPPING! **FREE COFFEE!</h4>
-            </a>
-            <h3 class="product-price text-center mt-5 font-weight-bold text-danger">$54.00</h3>
+        <div class="product-item col-sm-6 col-md-3 mt-5 text-center">
+          <a href="#" class="product-img-box">
+            <img src="https://picsum.photos/300/300?image=10" alt="" class="img-fluid">
+          
+            <h4 class="product-title text-center mt-3 font-weight-bold">MY GRANOLA IS NUTS! DR. GRANOLA® SIMPLE & EASY BAKE IT YOURSELF GRANOLA GIFT KIT! *FREE SHIPPING! **FREE COFFEE!</h4>
+          </a>
+          <h3 class="product-price text-center mt-5 font-weight-bold text-danger">$54.00</h3>
 
-          </div>
-          <div class="product-item col-sm-6 col-md-3 mt-5">
-            <a href="#" class="product-img-box">
-              <img src="https://picsum.photos/300/300?image=30" alt="" class="img-fluid">
-            
-              <h4 class="product-title text-center mt-3 font-weight-bold">MY GRANOLA IS NUTS! DR. GRANOLA® SIMPLE & EASY BAKE IT YOURSELF GRANOLA GIFT KIT! *FREE SHIPPING! **FREE COFFEE!</h4>
-            </a>
-            <h3 class="product-price text-center mt-5 font-weight-bold text-danger">$54.00</h3>
+        </div>
+        <div class="product-item col-sm-6 col-md-3 mt-5 text-center">
+          <a href="#" class="product-img-box">
+            <img src="https://picsum.photos/300/300?image=20" alt="" class="img-fluid">
+          
+            <h4 class="product-title text-center mt-3 font-weight-bold">MY GRANOLA IS NUTS! DR. GRANOLA® SIMPLE & EASY BAKE IT YOURSELF GRANOLA GIFT KIT! *FREE SHIPPING! **FREE COFFEE!</h4>
+          </a>
+          <h3 class="product-price text-center mt-5 font-weight-bold text-danger">$54.00</h3>
 
-          </div>
-          <div class="product-item col-sm-6 col-md-3 mt-5">
-            <a href="#" class="product-img-box">
-              <img src="https://picsum.photos/300/300?image=30" alt="" class="img-fluid">
-            
-              <h4 class="product-title text-center mt-3 font-weight-bold">MY GRANOLA IS NUTS! DR. GRANOLA® SIMPLE & EASY BAKE IT YOURSELF GRANOLA GIFT KIT! *FREE SHIPPING! **FREE COFFEE!</h4>
-            </a>
-            <h3 class="product-price text-center mt-5 font-weight-bold text-danger">$54.00</h3>
+        </div>
+        <div class="product-item col-sm-6 col-md-3 mt-5 text-center">
+          <a href="#" class="product-img-box">
+            <img src="https://picsum.photos/300/300?image=30" alt="" class="img-fluid">
+          
+            <h4 class="product-title text-center mt-3 font-weight-bold">MY GRANOLA IS NUTS! DR. GRANOLA® SIMPLE & EASY BAKE IT YOURSELF GRANOLA GIFT KIT! *FREE SHIPPING! **FREE COFFEE!</h4>
+          </a>
+          <h3 class="product-price text-center mt-5 font-weight-bold text-danger">$54.00</h3>
 
-          </div>
-          <div class="product-item col-sm-6 col-md-3 mt-5">
-            <a href="#" class="product-img-box">
-              <img src="https://picsum.photos/300/300?image=10" alt="" class="img-fluid">
-            
-              <h4 class="product-title text-center mt-3 font-weight-bold">MY GRANOLA IS NUTS! DR. GRANOLA® SIMPLE & EASY BAKE IT YOURSELF GRANOLA GIFT KIT! *FREE SHIPPING! **FREE COFFEE!</h4>
-            </a>
-            <h3 class="product-price text-center mt-5 font-weight-bold text-danger">$54.00</h3>
+        </div>
+        <div class="product-item col-sm-6 col-md-3 mt-5 text-center">
+          <a href="#" class="product-img-box">
+            <img src="https://picsum.photos/300/300?image=30" alt="" class="img-fluid">
+          
+            <h4 class="product-title text-center mt-3 font-weight-bold">MY GRANOLA IS NUTS! DR. GRANOLA® SIMPLE & EASY BAKE IT YOURSELF GRANOLA GIFT KIT! *FREE SHIPPING! **FREE COFFEE!</h4>
+          </a>
+          <h3 class="product-price text-center mt-5 font-weight-bold text-danger">$54.00</h3>
+        </div>
+        <div class="product-item col-sm-6 col-md-3 mt-5 text-center">
+          <a href="#" class="product-img-box">
+            <img src="https://picsum.photos/300/300?image=10" alt="" class="img-fluid">
+          
+            <h4 class="product-title text-center mt-3 font-weight-bold">MY GRANOLA IS NUTS! DR. GRANOLA® SIMPLE & EASY BAKE IT YOURSELF GRANOLA GIFT KIT! *FREE SHIPPING! **FREE COFFEE!</h4>
+          </a>
+          <h3 class="product-price text-center mt-5 font-weight-bold text-danger">$54.00</h3>
 
-          </div>
-          <div class="product-item col-sm-6 col-md-3 mt-5">
-            <a href="#" class="product-img-box">
-              <img src="https://picsum.photos/300/300?image=20" alt="" class="img-fluid">
-            
-              <h4 class="product-title text-center mt-3 font-weight-bold">MY GRANOLA IS NUTS! DR. GRANOLA® SIMPLE & EASY BAKE IT YOURSELF GRANOLA GIFT KIT! *FREE SHIPPING! **FREE COFFEE!</h4>
-            </a>
-            <h3 class="product-price text-center mt-5 font-weight-bold text-danger">$54.00</h3>
+        </div>
+        <div class="product-item col-sm-6 col-md-3 mt-5 text-center">
+          <a href="#" class="product-img-box">
+            <img src="https://picsum.photos/300/300?image=20" alt="" class="img-fluid">
+          
+            <h4 class="product-title text-center mt-3 font-weight-bold">MY GRANOLA IS NUTS! DR. GRANOLA® SIMPLE & EASY BAKE IT YOURSELF GRANOLA GIFT KIT! *FREE SHIPPING! **FREE COFFEE!</h4>
+          </a>
+          <h3 class="product-price text-center mt-5 font-weight-bold text-danger">$54.00</h3>
 
-          </div>
-          <div class="product-item col-sm-6 col-md-3 mt-5">
-            <a href="#" class="product-img-box">
-              <img src="https://picsum.photos/300/300?image=30" alt="" class="img-fluid">
-            
-              <h4 class="product-title text-center mt-3 font-weight-bold">MY GRANOLA IS NUTS! DR. GRANOLA® SIMPLE & EASY BAKE IT YOURSELF GRANOLA GIFT KIT! *FREE SHIPPING! **FREE COFFEE!</h4>
-            </a>
-            <h3 class="product-price text-center mt-5 font-weight-bold text-danger">$54.00</h3>
+        </div>
+        <div class="product-item col-sm-6 col-md-3 mt-5 text-center">
+          <a href="#" class="product-img-box">
+            <img src="https://picsum.photos/300/300?image=30" alt="" class="img-fluid">
+          
+            <h4 class="product-title text-center mt-3 font-weight-bold">MY GRANOLA IS NUTS! DR. GRANOLA® SIMPLE & EASY BAKE IT YOURSELF GRANOLA GIFT KIT! *FREE SHIPPING! **FREE COFFEE!</h4>
+          </a>
+          <h3 class="product-price text-center mt-5 font-weight-bold text-danger">$54.00</h3>
 
-          </div>
-          <div class="product-item col-sm-6 col-md-3 mt-5">
-            <a href="#" class="product-img-box">
-              <img src="https://picsum.photos/300/300?image=30" alt="" class="img-fluid">
-            
-              <h4 class="product-title text-center mt-3 font-weight-bold">MY GRANOLA IS NUTS! DR. GRANOLA® SIMPLE & EASY BAKE IT YOURSELF GRANOLA GIFT KIT! *FREE SHIPPING! **FREE COFFEE!</h4>
-            </a>
-            <h3 class="product-price text-center mt-5 font-weight-bold text-danger">$54.00</h3>
+        </div>
+        <div class="product-item col-sm-6 col-md-3 mt-5 text-center">
+          <a href="#" class="product-img-box">
+            <img src="https://picsum.photos/300/300?image=30" alt="" class="img-fluid">
+          
+            <h4 class="product-title text-center mt-3 font-weight-bold">MY GRANOLA IS NUTS! DR. GRANOLA® SIMPLE & EASY BAKE IT YOURSELF GRANOLA GIFT KIT! *FREE SHIPPING! **FREE COFFEE!</h4>
+          </a>
+          <h3 class="product-price text-center mt-5 font-weight-bold text-danger">$54.00</h3>
 
-          </div>
-				</div>
-			</article>
+        </div>
+
+      </div>
+    </article>
 			
 		</div>
 	</section>				
@@ -252,80 +253,90 @@ else { $paged = 1; }
 
   <div class="container">
 
-    <article class="products pb-3">
+    <article class="acf-items pb-3">
       <div class="row">
-        <div class="product-item col-sm-6 col-md-3 mt-5">
-          <a href="#" class="product-img-box">
-            <img src="https://picsum.photos/300/300?image=10" alt="" class="img-fluid">
-          
-            <h4 class="product-title text-center mt-3 font-weight-bold">MY GRANOLA IS NUTS! DR. GRANOLA® SIMPLE & EASY BAKE IT YOURSELF GRANOLA GIFT KIT! *FREE SHIPPING! **FREE COFFEE!</h4>
-          </a>
-          <h3 class="product-price text-center mt-5 font-weight-bold text-danger">$54.00</h3>
 
+        <div class="acf-item col-sm-6 col-md-6 mt-5  text-center">
+          <article class="product-img-box">
+            <a href="#">
+              <img src="https://picsum.photos/800/800?image=16" alt="" class="img-fluid">
+            
+              <div class="dark-text-box">
+                <div class="row">
+                  <div class="col-sm-8">
+                    <h4 class="product-title mt-3 pl-2 font-weight-bold text-left">
+                      QUESTIONS? CALL ... 1-800-GRANOLA®
+                    </h4>
+                  </div>
+                  <div class="col-sm-4">
+                    <span class="btn btn-danger btn-block btn-lg mt-1">800-472-6652</span>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </article>
         </div>
-        <div class="product-item col-sm-6 col-md-3 mt-5">
-          <a href="#" class="product-img-box">
-            <img src="https://picsum.photos/300/300?image=20" alt="" class="img-fluid">
-          
-            <h4 class="product-title text-center mt-3 font-weight-bold">MY GRANOLA IS NUTS! DR. GRANOLA® SIMPLE & EASY BAKE IT YOURSELF GRANOLA GIFT KIT! *FREE SHIPPING! **FREE COFFEE!</h4>
-          </a>
-          <h3 class="product-price text-center mt-5 font-weight-bold text-danger">$54.00</h3>
-
+        <div class="acf-item col-sm-6 col-md-6 mt-5  text-center">
+          <article class="product-img-box">
+            <a href="#">
+              <img src="https://picsum.photos/800/800?image=15" alt="" class="img-fluid">
+            
+              <div class="dark-text-box">
+                <div class="row">
+                  <div class="col-sm-8">
+                    <h4 class="product-title mt-3 pl-2 font-weight-bold text-left">
+                      *FREE SHIPPING*ON ALL ORDERS OVER $49.00
+                    </h4>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="btn btn-danger btn-block btn-lg mt-1">Shop Now</div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </article>
         </div>
-        <div class="product-item col-sm-6 col-md-3 mt-5">
-          <a href="#" class="product-img-box">
-            <img src="https://picsum.photos/300/300?image=30" alt="" class="img-fluid">
-          
-            <h4 class="product-title text-center mt-3 font-weight-bold">MY GRANOLA IS NUTS! DR. GRANOLA® SIMPLE & EASY BAKE IT YOURSELF GRANOLA GIFT KIT! *FREE SHIPPING! **FREE COFFEE!</h4>
-          </a>
-          <h3 class="product-price text-center mt-5 font-weight-bold text-danger">$54.00</h3>
-
+        <div class="acf-item col-sm-6 col-md-6 mt-5  text-center">
+          <article class="product-img-box">
+            <a href="#">
+              <img src="https://picsum.photos/800/800?image=18" alt="" class="img-fluid">
+            
+              <div class="dark-text-box">
+                <div class="row">
+                  <div class="col-sm-8">
+                    <h4 class="product-title mt-3 pl-2 font-weight-bold text-left">
+                      MY GRANOLA IS NUTS!
+                    </h4>
+                  </div>
+                  <div class="col-sm-4">
+                    <span class="btn btn-danger btn-block btn-lg mt-1">Read More</span>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </article>
         </div>
-        <div class="product-item col-sm-6 col-md-3 mt-5">
-          <a href="#" class="product-img-box">
-            <img src="https://picsum.photos/300/300?image=30" alt="" class="img-fluid">
-          
-            <h4 class="product-title text-center mt-3 font-weight-bold">MY GRANOLA IS NUTS! DR. GRANOLA® SIMPLE & EASY BAKE IT YOURSELF GRANOLA GIFT KIT! *FREE SHIPPING! **FREE COFFEE!</h4>
-          </a>
-          <h3 class="product-price text-center mt-5 font-weight-bold text-danger">$54.00</h3>
-
+        <div class="acf-item col-sm-6 col-md-6 mt-5  text-center">
+          <article class="product-img-box">
+            <a href="#">
+              <img src="https://picsum.photos/800/800?image=19" alt="" class="img-fluid">
+            
+              <div class="dark-text-box">
+                <div class="row">
+                  <div class="col-sm-8">
+                    <h4 class="product-title mt-3 pl-2 font-weight-bold text-left">
+                      GIVE THE GIFT OF GRANOLA
+                    </h4>
+                  </div>
+                  <div class="col-sm-4">
+                    <span class="btn btn-danger btn-block btn-lg mt-1">Contact Us</span>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </article>
         </div>
-        <div class="product-item col-sm-6 col-md-3 mt-5">
-          <a href="#" class="product-img-box">
-            <img src="https://picsum.photos/300/300?image=10" alt="" class="img-fluid">
-          
-            <h4 class="product-title text-center mt-3 font-weight-bold">MY GRANOLA IS NUTS! DR. GRANOLA® SIMPLE & EASY BAKE IT YOURSELF GRANOLA GIFT KIT! *FREE SHIPPING! **FREE COFFEE!</h4>
-          </a>
-          <h3 class="product-price text-center mt-5 font-weight-bold text-danger">$54.00</h3>
-
-        </div>
-        <div class="product-item col-sm-6 col-md-3 mt-5">
-          <a href="#" class="product-img-box">
-            <img src="https://picsum.photos/300/300?image=20" alt="" class="img-fluid">
-          
-            <h4 class="product-title text-center mt-3 font-weight-bold">MY GRANOLA IS NUTS! DR. GRANOLA® SIMPLE & EASY BAKE IT YOURSELF GRANOLA GIFT KIT! *FREE SHIPPING! **FREE COFFEE!</h4>
-          </a>
-          <h3 class="product-price text-center mt-5 font-weight-bold text-danger">$54.00</h3>
-
-        </div>
-        <div class="product-item col-sm-6 col-md-3 mt-5">
-          <a href="#" class="product-img-box">
-            <img src="https://picsum.photos/300/300?image=30" alt="" class="img-fluid">
-          
-            <h4 class="product-title text-center mt-3 font-weight-bold">MY GRANOLA IS NUTS! DR. GRANOLA® SIMPLE & EASY BAKE IT YOURSELF GRANOLA GIFT KIT! *FREE SHIPPING! **FREE COFFEE!</h4>
-          </a>
-          <h3 class="product-price text-center mt-5 font-weight-bold text-danger">$54.00</h3>
-
-        </div>
-        <div class="product-item col-sm-6 col-md-3 mt-5">
-          <a href="#" class="product-img-box">
-            <img src="https://picsum.photos/300/300?image=30" alt="" class="img-fluid">
-          
-            <h4 class="product-title text-center mt-3 font-weight-bold">MY GRANOLA IS NUTS! DR. GRANOLA® SIMPLE & EASY BAKE IT YOURSELF GRANOLA GIFT KIT! *FREE SHIPPING! **FREE COFFEE!</h4>
-          </a>
-          <h3 class="product-price text-center mt-5 font-weight-bold text-danger">$54.00</h3>
-
-        </div>
+      
       </div>
     </article>
     
@@ -337,23 +348,29 @@ else { $paged = 1; }
 
   <section class="last-cta-block">
 
-    <h2 class="headline text-center p-5">
-      LAST CTA BLOCK
-    </h2>
-
     <div class="container">
 
-      <article class="products pt-3">
+      <article class="last-cta pt-3">
         <div class="row">
-          <a href="#" class="product-img-box col-md-4">
-            <img src="https://picsum.photos/400/300?image=1" alt="" class="img-fluid">
-          </a>
-          <a href="#" class="product-img-box col-md-4">
-            <img src="https://picsum.photos/400/300?image=2" alt="" class="img-fluid">
-          </a>
-          <a href="#" class="product-img-box col-md-4">
-            <img src="https://picsum.photos/400/300?image=3" alt="" class="img-fluid">
-          </a>
+          
+          <div class="cta-box col-sm-6 col-md-8 text-center ">
+            
+            <h2 class="headline">
+              Everyone Has A Granola Story. Here’s Ours.
+            </h2>
+            <a href="#" class="btn btn-danger btn-lg mb-3">
+              Find a Gift Now!
+            </a>
+
+          </div>
+          
+          <div class="cta-img-box col-sm-6 col-md-4">
+
+            <img src="/wp-content/uploads/2020/01/dr-granola.png" alt="" class="img-fluid img-dr-granola">
+            <h3 class="txt-dr-granola font-weight-bold">DR. GRANOLA®</h3>
+
+          </div>
+
         </div>
       </article>
       

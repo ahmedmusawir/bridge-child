@@ -396,6 +396,13 @@ header .header_bottom {
   border-bottom: 0px solid lighten($color: gray, $amount: 20%) !important;
   margin-top: -1rem;
   box-shadow: 1px 1px 8px gray;
+
+  @media (max-width: 1000px) {
+    margin-top: -4.8rem !important;
+  }
+  @media (max-width: 679px) {
+    margin-top: -2rem !important;
+  }
 }
 
 #new-home-page {
@@ -415,6 +422,10 @@ header .header_bottom {
   margin-top: 20rem;
   margin-bottom: 5rem;
   padding-bottom: 5rem;
+
+  @media (max-width: 1000px) {
+    margin-top: 10rem;
+  }
 
   .moose-slick-carousel {
     .slick-prev {
@@ -484,19 +495,59 @@ header .header_bottom {
 }
 
 .acf-block {
-  // border: 1rem solid blue;
+  // border: 1rem solid yellowgreen;
   padding-bottom: 5rem;
   margin-bottom: 5rem;
+  margin-top: 5rem;
 
-  .products {
-    .product-item {
-      a {
+  .acf-items {
+    .acf-item {
+      .product-img-box {
+        // border: 1rem solid red;
         color: black !important;
+
+        @media (min-width: 1199px) {
+          padding: 3rem;
+        }
+
+        img {
+          position: relative;
+          z-index: 1;
+        }
         &:hover {
           text-decoration: none;
           color: crimson !important;
           img {
             opacity: 0.5;
+          }
+        }
+
+        .dark-text-box {
+          position: relative;
+          z-index: 100;
+          background-color: rgba($color: black, $alpha: 0.6);
+          min-height: 80px;
+          margin-top: -80px !important;
+          padding: 1.5rem;
+
+          @media (max-width: 991px) {
+            margin-top: 0px !important;
+            min-height: 120px;
+            background-color: rgba($color: black, $alpha: 1);
+            text-align: center !important;
+          }
+
+          .product-title {
+            color: white;
+            font-size: 1.35rem;
+          }
+          .col-sm-8,
+          .col-sm-4 {
+            @media (max-width: 991px) {
+              -ms-flex: 0 0 100%;
+              flex: 0 0 100%;
+              max-width: 100%;
+            }
           }
         }
       }
@@ -505,5 +556,44 @@ header .header_bottom {
 }
 
 .last-cta-block {
-  border: 1rem solid dodgerblue;
+  // border: 1rem solid dodgerblue;
+  background-color: #d9d9d9;
+
+  .container {
+    background-color: transparent !important;
+
+    .last-cta {
+      .cta-box {
+        // border: 1rem dotted black;
+        .btn {
+          padding: 1.5rem 5rem;
+          margin-top: -3rem;
+        }
+      }
+      .cta-img-box {
+        .img-dr-granola {
+          // border: 1rem dotted blue;
+          margin-top: -7rem;
+          @media (max-width: 991px) {
+            margin-top: 0;
+          }
+          @media (max-width: 575px) {
+            margin: auto;
+            display: block;
+          }
+        }
+        .txt-dr-granola {
+          margin-top: -15rem;
+          float: right;
+
+          @media (max-width: 1199px) {
+            float: none;
+            margin-top: 0.5rem;
+            margin-bottom: 2rem;
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
 }
