@@ -7913,6 +7913,15 @@ header .header_bottom {
 .featured-block .products .product-item a:hover img {
   opacity: 0.5;
 }
+.featured-block .products .product-item a .product-title {
+  min-height: 100px;
+}
+@media (max-width: 575px) {
+  .featured-block .products .product-item a .product-title {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
 
 .banner-block {
   background: url("/wp-content/uploads/2020/01/banner-bg-granola.jpg") no-repeat;

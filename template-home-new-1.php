@@ -150,7 +150,7 @@ else { $paged = 1; }
 		<article class="products pb-3">
       <div class="row">
 
-        <!-- <div class="product-item col-sm-6 col-md-3 mt-5 text-center">
+        <div class="product-item col-sm-6 col-md-3 mt-5 text-center">
           <a href="#" class="product-img-box">
             <img src="https://picsum.photos/300/300?image=10" alt="" class="img-fluid">
           
@@ -159,66 +159,68 @@ else { $paged = 1; }
           <h3 class="product-price text-center mt-5 font-weight-bold text-danger">$54.00</h3>
 
         </div>
-         -->
+        <div class="product-item col-sm-6 col-md-3 mt-5 text-center">
+          <a href="#" class="product-img-box">
+            <img src="https://picsum.photos/300/300?image=20" alt="" class="img-fluid">
+          
+            <h4 class="product-title text-center mt-3 font-weight-bold">MY GRANOLA IS NUTS! DR. GRANOLA® SIMPLE & EASY BAKE IT YOURSELF GRANOLA GIFT KIT! *FREE SHIPPING! **FREE COFFEE!</h4>
+          </a>
+          <h3 class="product-price text-center mt-5 font-weight-bold text-danger">$54.00</h3>
 
-         <ul class="products">
-          <div class="row">
-            <?php
-                $args = array(
-                    'post_type' => 'product',
-                    'product_cat' => 'featured',
-                    'posts_per_page' => 8
-                    );
-                $loop = new WP_Query( $args );
+        </div>
+        <div class="product-item col-sm-6 col-md-3 mt-5 text-center">
+          <a href="#" class="product-img-box">
+            <img src="https://picsum.photos/300/300?image=30" alt="" class="img-fluid">
+          
+            <h4 class="product-title text-center mt-3 font-weight-bold">MY GRANOLA IS NUTS! DR. GRANOLA® SIMPLE & EASY BAKE IT YOURSELF GRANOLA GIFT KIT! *FREE SHIPPING! **FREE COFFEE!</h4>
+          </a>
+          <h3 class="product-price text-center mt-5 font-weight-bold text-danger">$54.00</h3>
 
-                // echo '<pre>';
-                // print_r($loop->post);
-                // echo '</pre>';
-                // die('showing the loop obj');
-                
-                if ( $loop->have_posts() ) {
-                    while ( $loop->have_posts() ) : $loop->the_post();
-                        $image = wp_get_attachment_image_src( get_post_thumbnail_id( $loop->post->ID ), 'single-post-thumbnail' );
+        </div>
+        <div class="product-item col-sm-6 col-md-3 mt-5 text-center">
+          <a href="#" class="product-img-box">
+            <img src="https://picsum.photos/300/300?image=30" alt="" class="img-fluid">
+          
+            <h4 class="product-title text-center mt-3 font-weight-bold">MY GRANOLA IS NUTS! DR. GRANOLA® SIMPLE & EASY BAKE IT YOURSELF GRANOLA GIFT KIT! *FREE SHIPPING! **FREE COFFEE!</h4>
+          </a>
+          <h3 class="product-price text-center mt-5 font-weight-bold text-danger">$54.00</h3>
+        </div>
+        <div class="product-item col-sm-6 col-md-3 mt-5 text-center">
+          <a href="#" class="product-img-box">
+            <img src="https://picsum.photos/300/300?image=10" alt="" class="img-fluid">
+          
+            <h4 class="product-title text-center mt-3 font-weight-bold">MY GRANOLA IS NUTS! DR. GRANOLA® SIMPLE & EASY BAKE IT YOURSELF GRANOLA GIFT KIT! *FREE SHIPPING! **FREE COFFEE!</h4>
+          </a>
+          <h3 class="product-price text-center mt-5 font-weight-bold text-danger">$54.00</h3>
 
-                ?>
-             
-              <div class="product-item col-sm-6 col-md-3 mt-5 text-center">
+        </div>
+        <div class="product-item col-sm-6 col-md-3 mt-5 text-center">
+          <a href="#" class="product-img-box">
+            <img src="https://picsum.photos/300/300?image=20" alt="" class="img-fluid">
+          
+            <h4 class="product-title text-center mt-3 font-weight-bold">MY GRANOLA IS NUTS! DR. GRANOLA® SIMPLE & EASY BAKE IT YOURSELF GRANOLA GIFT KIT! *FREE SHIPPING! **FREE COFFEE!</h4>
+          </a>
+          <h3 class="product-price text-center mt-5 font-weight-bold text-danger">$54.00</h3>
 
-                <a href="<?php echo get_permalink( $loop->post->ID ) ?>">
+        </div>
+        <div class="product-item col-sm-6 col-md-3 mt-5 text-center">
+          <a href="#" class="product-img-box">
+            <img src="https://picsum.photos/300/300?image=30" alt="" class="img-fluid">
+          
+            <h4 class="product-title text-center mt-3 font-weight-bold">MY GRANOLA IS NUTS! DR. GRANOLA® SIMPLE & EASY BAKE IT YOURSELF GRANOLA GIFT KIT! *FREE SHIPPING! **FREE COFFEE!</h4>
+          </a>
+          <h3 class="product-price text-center mt-5 font-weight-bold text-danger">$54.00</h3>
 
-                  <div class="product-img-box">                  
-                    <?php the_post_thumbnail( 'medium', ['class' => 'img-fluid'] ); ?>
-                    <!-- <img  src="<?php  //echo $image[0]; ?>" data-id="<?php //echo $loop->post->ID; ?>" alt="granola" class="img-fluid"> -->
-                  
-                    <h4 class="product-title text-center mt-3 font-weight-bold text-uppercase">
-                      <?php the_title(); ?>
-                      <?php // echo $loop->post->post_title; ?>
-                    </h4>
-                    <h3 class="product-price text-center mt-5 font-weight-bold text-danger">
-                      <!-- $54.00 -->
-                      <?php $price = get_post_meta( get_the_ID(), '_price', true ); ?>
-                      <?php echo wc_price( $price ); ?>
-                    </h3>
-                  </div>
+        </div>
+        <div class="product-item col-sm-6 col-md-3 mt-5 text-center">
+          <a href="#" class="product-img-box">
+            <img src="https://picsum.photos/300/300?image=30" alt="" class="img-fluid">
+          
+            <h4 class="product-title text-center mt-3 font-weight-bold">MY GRANOLA IS NUTS! DR. GRANOLA® SIMPLE & EASY BAKE IT YOURSELF GRANOLA GIFT KIT! *FREE SHIPPING! **FREE COFFEE!</h4>
+          </a>
+          <h3 class="product-price text-center mt-5 font-weight-bold text-danger">$54.00</h3>
 
-                </a>
-
-              </div>
-                
-
-            <?php        
-
-                endwhile;
-
-            } else {
-                echo __( 'No products found' );
-            }
-            wp_reset_postdata();
-            
-            ?>
-          </div> <!-- end row -->
-        </ul><!--/.products-->
-
+        </div>
 
       </div>
     </article>

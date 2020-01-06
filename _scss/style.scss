@@ -459,6 +459,16 @@ header .header_bottom {
             opacity: 0.5;
           }
         }
+
+        .product-title {
+          min-height: 100px;
+          // border: 1px solid red;
+
+          @media (max-width: 575px) {
+            padding-left: 2rem;
+            padding-right: 2rem;
+          }
+        }
       }
     }
   }
