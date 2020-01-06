@@ -26,7 +26,10 @@ else { $paged = 1; }
 ?>
 <!-- MOOSE CALLING THE CUSTOM HEADER HERE  -->
 
-	<?php get_header(); ?>
+  <?php get_header(); ?>
+  
+<!-- SECTION 1: SLICK CAROUSEL BLOCK -->
+
 <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 <!-- SECTION 1: TOP CAROUSEL BLOCK -->
 <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"/>
@@ -35,7 +38,108 @@ else { $paged = 1; }
 
 <main id="new-home-page">
   <section class="top-carousel-block">
+    <h2 class="headline text-center">
+      SHOP OUR <strong>EXCLUSIVE</strong> PRODUCTS
+    </h2>
+      
+    <div class="container">
+    <!-- PREP FOR PRODUCT CATEGORY QUERY -->
+    <?php
+
+      $term_args = array(
+        'taxonomy'   => 'product_cat', // Swap in your custom taxonomy name
+        'hide_empty' => true, 
+        'cache_images' => true,
+      );
+      
+      $terms = apply_filters( 'taxonomy-images-get-terms', '', $term_args );
+      // $terms = get_terms( $term_args );
+      // $terms = get_categories( $term_args );
+      // echo '<pre>';
+      // print_r($terms);
+      // echo '</pre>';
+      // die('showing the terms obj');
+    ?>
+
+      <div class="moose-slick-carousel">
+
+      <?php
+				if ($terms) : /* Start the Loop */
+				// TERM LOOP STARTS
+				foreach( $terms as $term ) :	
+
+          $featured_img_url = wp_get_attachment_image_src($term->image_id, 'full'); 
+
+      ?>
+      
+
+        <a href="<?php echo esc_url( get_term_link( $term, $term->taxonomy ) ) ?> ">  
+          <div><img src="<?php echo $featured_img_url[0]; ?>" alt="product-category"></div>
+        </a>
+
+      <?php
+					endforeach;
+				else :
+					get_template_part('template-parts/content', 'none');
+				endif;
+      ?>
+      
+      </div>
     
+    </div>  
+  </section>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+  <script>
+  jQuery(document).ready(function($){
+    $('.moose-slick-carousel').slick({
+      dots: false,
+      infinite: true,
+      speed: 300,
+      slidesToShow: 5,
+      slidesToScroll: 1,
+      autoplay: true,
+      autoplaySpeed: 4000,
+      responsive: [
+        {
+          breakpoint: 1024,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 3,
+            infinite: true,
+            dots: true
+          }
+        },
+        {
+          breakpoint: 600,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 2
+          }
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 1
+          }
+        }
+      ]
+    });
+
+    // $('.moose-slick-carousel').slick({
+    //   slidesToShow: 5,
+    //   slidesToScroll: 1,
+    //   autoplay: true,
+    //   autoplaySpeed: 2000,
+    // });
+    
+    
+  });
+  </script>
+
+
+<!-- TEST BLOCK END -->
+<!--     
     <h2 class="headline text-center">
 			SHOP OUR <strong>EXCLUSIVE</strong> PRODUCTS
     </h2>
@@ -83,59 +187,9 @@ else { $paged = 1; }
 			
     </div>
     
-  </section>
+  </section> -->
 
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
-  <script>
-  jQuery(document).ready(function($){
-    $('.moose-slick-carousel').slick({
-      dots: false,
-      infinite: true,
-      speed: 300,
-      slidesToShow: 5,
-      slidesToScroll: 1,
-      autoplay: true,
-      autoplaySpeed: 4000,
-      responsive: [
-        {
-          breakpoint: 1024,
-          settings: {
-            slidesToShow: 3,
-            slidesToScroll: 3,
-            infinite: true,
-            dots: true
-          }
-        },
-        {
-          breakpoint: 600,
-          settings: {
-            slidesToShow: 2,
-            slidesToScroll: 2
-          }
-        },
-        {
-          breakpoint: 480,
-          settings: {
-            slidesToShow: 2,
-            slidesToScroll: 1
-          }
-        }
-        // You can unslick at a given breakpoint now by adding:
-        // settings: "unslick"
-        // instead of a settings object
-      ]
-    });
 
-    // $('.moose-slick-carousel').slick({
-    //   slidesToShow: 5,
-    //   slidesToScroll: 1,
-    //   autoplay: true,
-    //   autoplaySpeed: 2000,
-    // });
-    
-    
-  });
-  </script>
 
 <!-- SECTION 2: FEATURED BLOCK -->
 
@@ -150,25 +204,14 @@ else { $paged = 1; }
 		<article class="products pb-3">
       <div class="row">
 
-        <!-- <div class="product-item col-sm-6 col-md-3 mt-5 text-center">
-          <a href="#" class="product-img-box">
-            <img src="https://picsum.photos/300/300?image=10" alt="" class="img-fluid">
-          
-            <h4 class="product-title text-center mt-3 font-weight-bold">MY GRANOLA IS NUTS! DR. GRANOLA® SIMPLE & EASY BAKE IT YOURSELF GRANOLA GIFT KIT! *FREE SHIPPING! **FREE COFFEE!</h4>
-          </a>
-          <h3 class="product-price text-center mt-5 font-weight-bold text-danger">$54.00</h3>
-
-        </div>
-         -->
-
-         <ul class="products">
+        <ul class="products">
           <div class="row">
             <?php
                 $args = array(
                     'post_type' => 'product',
                     'product_cat' => 'featured',
                     'posts_per_page' => 8
-                    );
+                );
                 $loop = new WP_Query( $args );
 
                 // echo '<pre>';
@@ -214,7 +257,7 @@ else { $paged = 1; }
                 echo __( 'No products found' );
             }
             wp_reset_postdata();
-            
+
             ?>
           </div> <!-- end row -->
         </ul><!--/.products-->
